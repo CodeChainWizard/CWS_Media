@@ -1,5 +1,5 @@
 MERN Media TUTORIAL
-Hi! My name is Abhishek Singh, I have created this tutorial to teach MERN Stack for free on YouTube.
+Hi! My name is Shubham Danecha, I have created this tutorial to teach MERN Stack for free on YouTube.
 
 Prerequisite
 Must have basic knowledge of Node, React, Express, MongoDB . I have made tutorial on each technology on YouTube , make sure to check it out. Links are Below respectively
