@@ -1,14 +1,14 @@
-import React, { useEffect, useState } from "react";
-import "./Login.css";
-import { Typography, Button } from "@mui/material";
-import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
-import { loginUser } from "../../Actions/User";
-import { useAlert } from "react-alert";
+import React, { useEffect, useState } from 'react';
+import './Login.css';
+import { Typography, Button } from '@mui/material';
+import { Link } from 'react-router-dom';
+import { useDispatch, useSelector } from 'react-redux';
+import { loginUser } from '../../Actions/User';
+import { useAlert } from 'react-alert';
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const dispatch = useDispatch();
   const alert = useAlert();
 
@@ -24,19 +24,19 @@ const Login = () => {
   useEffect(() => {
     if (error) {
       alert.error(error);
-      dispatch({ type: "clearErrors" });
+      dispatch({ type: 'clearErrors' });
     }
     if (message) {
       alert.success(message);
-      dispatch({ type: "clearMessage" });
+      dispatch({ type: 'clearMessage' });
     }
   }, [alert, error, dispatch, message]);
 
   return (
     <div className="login">
       <form className="loginForm" onSubmit={loginHandler}>
-        <Typography variant="h3" style={{ padding: "2vmax" }}>
-          Social Aap
+        <Typography variant="h3" style={{ padding: '2vmax' }}>
+          Social App
         </Typography>
 
         <input
